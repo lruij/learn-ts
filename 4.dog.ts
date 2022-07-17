@@ -19,10 +19,15 @@ type animal = { name: string; age: number}
 class Dog {
   name: string;
   age: number;
+  // strict 模式下 未初始化属性必须通过 contructor 初始化值
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
 }
 
 const Dogs: animal[] = [
-  new Dog(),
+  new Dog('dd', 1),
   {
     name: 'tt',
     age: 2

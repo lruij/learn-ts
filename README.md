@@ -5,4 +5,5 @@
 - [x] 3.对象解构
 - [x] 4.数组和元组
 - [x] 5.interface 接口
-- [ ] 6.class 类
+- [x] 6.class 类
+- [x] 7.abstract 抽象类

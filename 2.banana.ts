@@ -11,13 +11,17 @@ const cname: string = 'year'
 const hasNull: null = null
 
 const hasUndefined: undefined = undefined
-
+// 此为 es6 语法 tsconfig.json target 得es6以上
 const key: symbol = Symbol('id')
 
 const isTrue: boolean = true
 
-let toVoid: void = null
-toVoid = undefined
+// void 返回的为 undefined
+let toVoid: void = void 0
+console.log(toVoid)
+// strict 模式下 不允许
+// toVoid = null
+// toVoid = undefined
 
 
 // 类
