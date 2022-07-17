@@ -4,6 +4,11 @@
 - [x] 2.类型介绍
 - [x] 3.对象解构
 - [x] 4.数组和元组
-- [x] 5.interface 接口
-- [x] 6.class 类
-- [x] 7.abstract 抽象类
+- [x] 5.接口 interface
+- [x] 6.类 class
+- [x] 7.抽象类 abstract
+- [x] 8.配置文件
+- [x] 9.联合类型和类型保护
+- [ ] 10.枚举类型 enum
+- [ ] 11.泛型 T
+- [ ] 12.命名空间 namespace
