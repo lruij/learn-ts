@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命名空间使用</title>
+    <!--
+      配置 tsconfig.json
+        "include": ["./12.*.ts"]       只包括12开头的ts文件
+          "module": "amd"              outFile 只能在amd 或 system 模式下使用
+          "outFile": "./12.layout.js"  输出文件合并到一个文件里
+     -->
+    <script src="./12.layout.js"></script>
+  </head>
+
+  <body>
+
+    <script>
+      new Layout.Page()
+    </script>
+  </body>
+
+</html>
