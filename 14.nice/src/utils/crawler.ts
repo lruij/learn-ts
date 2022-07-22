@@ -3,15 +3,12 @@ import superagent from 'superagent'
 import fs from 'fs'
 import path from 'path'
 
-import WeatherAnalyzer from './analyzer/weatherAnalyzer'
-// import XAnalyzer from './analyzer/XAnalyzer'
-
 export interface Analyzer {
   analyze: (html: string, filePath: string) => string
 }
 
 export default class Crawler {
-  private _filePath = path.resolve(__dirname, '../data/weather.json')
+  private _filePath = path.resolve(__dirname, '../../data/weather.json')
 
   constructor(private _analyzer: Analyzer, private _url: string) {
     this.initProcess()
@@ -32,10 +29,3 @@ export default class Crawler {
     fs.writeFileSync(this._filePath, content)
   }
 }
-
-// const url = 'http://www.weather.com.cn/weather/101280601.shtml'
-
-// const analyzer = WeatherAnalyzer.getInstance()
-// // const analyzer = new XAnalyzer()
-// const crawler = new Crawler(analyzer, url)
-// console.log('test build & nodemon')
