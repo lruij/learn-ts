@@ -23,10 +23,16 @@ const checkLogin = (req: BodyRequest, res: Response, next: NextFunction): void =
   }
 };
 
+const pickLog = (req: BodyRequest, res: Response, next: NextFunction): void => {
+  console.log("pickLog--");
+  next();
+};
+
 @controller("/")
 export class CrawlerController {
   @get("/getData")
   @use(checkLogin)
+  @use(pickLog)
   getData(req: BodyRequest, res: Response): void {
     const url = "http://www.weather.com.cn/weather/101280601.shtml";
     const analyzer = WeatherAnalyzer.getInstance();
